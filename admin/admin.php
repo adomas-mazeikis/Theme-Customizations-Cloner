@@ -1,13 +1,13 @@
 <?php
-class Make_Exporter_Admin {
+class Theme_Customizations_Cloner_Admin {
 
 	var $export_page_id;
-	var $options_group = 'make-exporter';
+	var $options_group = 'theme-customizations-cloner';
 
 	/**
 	 * Constructor
 	 */
-	function Make_Exporter_Admin() {
+	function Theme_Customizations_Cloner_Admin() {
 
 		global $wp_version;
 
@@ -20,7 +20,7 @@ class Make_Exporter_Admin {
 	 */
 	function admin_menu() {
 
-		$this->settings_page_id = add_utility_page( 'Make Exporter', 'Make Exporter', 'manage_options', 'make-exporter', array( $this, 'utilities_page' ), '' );
+		$this->settings_page_id = add_utility_page( 'Theme Customizations Cloner', 'Theme Customizations Cloner', 'manage_options', 'theme-cust-cloner', array( $this, 'utilities_page' ), '' );
                         
 	}
 	
