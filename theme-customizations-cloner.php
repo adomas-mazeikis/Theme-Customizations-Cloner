@@ -47,7 +47,7 @@ class Theme_Customizations_Cloner {
 		add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
 		if ( is_admin() ) {
 			include_once( dirname( __FILE__ ) . '/admin/admin.php' );
-			$this->admin = new Make_Exporter_Admin();
+			$this->admin = new Theme_Customizations_Cloner_Admin();
 		}
 
 	}
