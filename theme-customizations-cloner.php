@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Make Exporter for Theme Foundry
+Plugin Name: Theme Customizations Cloner
 Plugin URI: 
 Description: Simple tool to export theme modifications
 Version: 0.9
 Author: Adomas Mazeikis ( Arrow Root Media )
-Text Domain: make-exporter-for-theme-foundry
+Text Domain: theme-customizations-cloner
 Author URI: 
 License: GPLv2
 */
@@ -28,10 +28,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 defined('ABSPATH') or die("File not accessible separately");
-global $Make_Exporter;
-$Make_Exporter = new Make_Exporter();
+global $Theme_Customizations_Cloner;
+$Theme_Customizations_Cloner = new Theme_Customizations_Cloner();
 
-class Make_Exporter {
+class Theme_Customizations_Cloner {
 
 	var $version = '0.9';
 	var $admin   = null;
@@ -40,7 +40,7 @@ class Make_Exporter {
 	/**
 	 * Constructor
 	 */
-	function Make_Exporter() {
+	function Theme_Customizations_Cloner() {
 
 		$this->errors = new WP_Error();
 		register_activation_hook( __FILE__, array( &$this, 'install' ) );
