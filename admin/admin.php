@@ -87,7 +87,7 @@ class Theme_Customizations_Cloner_Admin {
                         {
                             $mods=file_get_contents($_FILES['themeMods']['tmp_name']);
                             $modArr=json_decode(sanitize_text_field($mods));
-                            if(is_array($modArr))
+                            if(is_array($modArr) or is_object($modArr))
                                 update_option('theme_mods_'.$import_theme,$modArr);
                             else
                                 echo "Theme modifications in uploaded file are not valid";
