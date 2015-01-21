@@ -56,7 +56,7 @@ class Theme_Customizations_Cloner {
 	 * Function performed on install
 	 */
 	function install() {
-		update_option( 'make_exporter_version', $this->version );
+		update_option( 'themeccloner_exporter_version', $this->version );
 	}
 	
 	/**
@@ -64,7 +64,7 @@ class Theme_Customizations_Cloner {
 	 */
 	function load_plugin_textdomain() {
 
-		//load_plugin_textdomain( 'make-exporter', false, basename( dirname( __FILE__ ) ) . '/languages' );
+		//load_plugin_textdomain( 'themeccloner-exporter', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
 	}
 }
